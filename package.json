@@ -1,0 +1,25 @@
+{
+  "name": "cli-passgenx",
+  "version": "0.9.0",
+  "description": "CLI app to generate random passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a12989x/cli-passgenx.git"
+  },
+  "keywords": [
+    "nodejs",
+    "password",
+    "cli",
+    "commandjs"
+  ],
+  "author": "Alexis Guzman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a12989x/cli-passgenx/issues"
+  },
+  "homepage": "https://github.com/a12989x/cli-passgenx#readme"
+}
