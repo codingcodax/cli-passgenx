@@ -2,9 +2,11 @@
   "name": "cli-passgenx",
   "version": "0.9.0",
   "description": "CLI app to generate random passwords",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint 'src/**/*.ts'",
+    "start": "nodemon --no-stdin --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "commit": "npx cz"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,22 @@
   },
   "homepage": "https://github.com/a12989x/cli-passgenx#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
