@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/a12989x/cli-passgenx/issues"
   },
-  "homepage": "https://github.com/a12989x/cli-passgenx#readme"
+  "homepage": "https://github.com/a12989x/cli-passgenx#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
 }
