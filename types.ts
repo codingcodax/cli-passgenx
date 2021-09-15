@@ -3,3 +3,5 @@ export type CreatePassword = (
   numbers: true,
   symbols: boolean
 ) => string;
+
+export type SavePassword = (password: string) => void;
