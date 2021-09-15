@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint 'src/**/*.ts'",
-    "start": "nodemon --no-stdin --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "start": "npx nodemon --no-stdin --watch 'src/**/*.ts' --exec node -r ts-node/register src/index.ts",
     "commit": "npx cz"
   },
   "repository": {
@@ -42,5 +42,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "commander": "^8.2.0"
   }
 }
